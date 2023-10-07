@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POST Request Test</title>
+</head>
+<body>
+
+  <h1>POST Request Test</h1>
+
+  <button onclick="testPostRequest()">Make POST Request</button>
+
+  <script>
+    function testPostRequest() {
+
+      const data = {
+        uid: 898,
+        firstname: "afsfa",
+        lastname: "jafdlj;ad",
+        clubs: "jaldfad",
+        email: "afdjldakl;"
+      };
+
+      // Making the POST request
+      fetch('http://localhost:3000/members', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Successful response
+        console.log('Response:', data);
+        alert('POST request successful!');
+      })
+      .catch(error => {
+        // Error handling
+        console.error('Error during fetch:', error);
+        alert('POST request failed!');
+      });
+    }
+  </script>
+
+</body>
+</html>
