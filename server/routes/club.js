@@ -6,11 +6,11 @@ Router.post("/club", async(req, res) => {
     console.log(req.body)
     let club = new Club({
         uid: req.body.uid,
-        name: req.body.name,
-        location: req.body.location,
-        lid: req.body.lid,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        start: req.body.start,
         clubs: req.body.clubs,
-        members: req.body.members
+        email: req.body.email
     });
 
     await club.save();
