@@ -6,7 +6,7 @@ const MemberSchema = new Schema({
     uid:{
         type:String,
         maxlength:100,
-        // required:true,
+        required:true,
         unique:true
     },
     // password:{

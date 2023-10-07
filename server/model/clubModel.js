@@ -9,11 +9,6 @@ const ClubSchema = new Schema({
         required:true,
         unique:true
     },
-    // password:{
-    //     type:String,
-    //     maxlength:100,
-    //     required:true
-    // },
     name:{
         type:String,
         maxlength:40,
