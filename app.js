@@ -59,10 +59,13 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+//Test API Call from button on React Native
+app.get("/test", (req, res) => {
+  console.log("Data is being sent from the front end")
+  res.send("Hello");
+})
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
   });
 
-app.get("/", (req, res) => {
-    res.send("Hello");
-})
