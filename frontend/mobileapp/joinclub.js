@@ -70,9 +70,12 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     padding: 10,
     width: '100%',
+    borderRadius: 15,
   },
   button: {
-    marginTop: 10,
+    marginTop: 30,
+    backgroundColor: '#F87C34', // Hex color code: 248 124 52
+    borderRadius: 15,
   },
 });
 

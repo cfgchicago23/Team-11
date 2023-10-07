@@ -94,26 +94,39 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#000000',
   },
   swiperContainer: {
     alignItems: 'center',
   },
   cardContainer: {
+    backgroundColor: '#F87C34', // Hex color code: 248 124 52
+    borderRadius: 15,
+    padding: 16,
+    margin: 16,
+    shadowColor: 'rgba(0, 0, 0, 0.2)',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
     width: 300,
     height: 400,
-    borderRadius: 10,
-    overflow: 'hidden',
+    shadowRadius: 4,
+    shadowOpacity: 1,
+    elevation: 2, // Android shadow
   },
   cardTitle: {
     textAlign: 'center',
     fontSize: 18,
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 20,
+    color: 'white',
   },
   cardBody: {
     textAlign: 'center',
+    fontFamily: 'Helvetica',
     fontSize: 16,
+    color: 'white',
   },
 });
 
