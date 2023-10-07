@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //ClubLead Schema 
@@ -9,11 +9,6 @@ const ClubLeadSchema = new Schema({
         required:true,
         unique:true
     },
-    // password:{
-    //     type:String,
-    //     maxlength:100,
-    //     required:true
-    // },
     firstname:{
         type:String,
         maxlength:40,
@@ -38,5 +33,5 @@ const ClubLeadSchema = new Schema({
     }, 
 });
 
-const ClubLead = mongoose.model("clublead", UserSchema);
+const ClubLead = mongoose.model("clublead", ClubLeadSchema);
 module.exports = ClubLead;

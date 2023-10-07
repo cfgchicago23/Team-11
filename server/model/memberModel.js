@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 //Member Schema 
@@ -29,7 +29,7 @@ const MemberSchema = new Schema({
         default:Date.now
     }, 
     clubs:{
-        type:String,
+        type:Array,
         default:""
     }, 
     email:{
@@ -38,5 +38,5 @@ const MemberSchema = new Schema({
     }, 
 });
 
-const Member = mongoose.model("member", UserSchema);
+const Member = mongoose.model("member", MemberSchema);
 module.exports = Member;
