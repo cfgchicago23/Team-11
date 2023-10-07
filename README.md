@@ -1,7 +1,7 @@
 # Team-11
 Members: 
 ## Global Family Care Network 
-On a high level, we aimed to create a platform for the Global Family Care Network's Thrive Program to manage and create clubs, to dissemenate information for trafficking prevention, and to foster community amongst club leaders. 
+On a high level, we aimed to create a platform for the Global Family Care Network's Thrive Program to manage and create clubs, to dissemenate information for trafficking prevention, and to foster community amongst club leaders. Our main objective was to create a central and accessible resource for the girls in the Thrive Program. 
 
 ## Getting Started
 Clone into your local repository and run ``npm install``. This should install all of the required dependencies to run our application.
