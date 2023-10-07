@@ -14,7 +14,7 @@ const ClubRequestSchema = new Schema({
         maxlength:40,
         default:""
     },
-    lastname:{
+    phonenumber:{
         type:String,
         maxlength:40,
         default:""
