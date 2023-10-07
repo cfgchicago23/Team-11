@@ -6,6 +6,8 @@ On a high level, we aimed to create a platform for the Global Family Care Networ
 ## Getting Started
 Clone into your local repository and run ``npm install``. This should install the required dependencies to run our application.
 
+Here's what we downloaded - Node.JS, Express, MongoDB, Mongoose, React Native, Body Parser
+
 ### Environment Variables
 To correctly connect to our mongoDB instance, you must have a ``.env`` file with the secret variable ``MONGO_PWD``. Otherwise, you will receive an authentication error. 
 
