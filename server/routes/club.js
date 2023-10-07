@@ -1,6 +1,7 @@
 const express = require("express");
 const Router = express.Router();
 const Club = require("../model/clubModel");
+const encrypt = require('crypto');
 
 // Router.get("/club", async(req, res) => {
 //     res.send("Welcome to the club page");
@@ -17,7 +18,7 @@ Router.post("/club", async(req, res) => {
     console.log(req.body)
     let club = new Club({
         uid: req.body.uid,
-        name: encrypt(req.body.name),
+        name: req.body.name,
         location: req.body.location,
         lid: req.body.lid,
         members: req.body.members
