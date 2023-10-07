@@ -1,37 +1,40 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import axios from 'axios';
 
-const JoinClubComponenet = ({ navigation }) => {
+const JoinClubComponent = ({ navigation }) => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhone] = useState("");
   const [town, setTown] = useState("");
 
-  const onSubmit = () => {
-    // Handle the form submission here
-    // Make request to mongo
-    console.log(name, phoneNumber, town);
-  };
+  const onSubmit = async () => {
+    const params = { location: 'jk' };
+    const res = await axios.get("http://localhost:3000/club", { params: params });
+    console.log(res.data);
+    // navigation.navigate
+};
+
 
   return (
     <View style={styles.container}>
       <Text>Join a Club</Text>
       <TextInput
         value={name}
-        onChange={(event) => setName(event.nativeEvent.text)}
+        onChangeText={setName}
         placeholder={'Name'}
         style={styles.input}
       />
 
       <TextInput
         value={phoneNumber}
-        onChange={(event) => setPhone(event.nativeEvent.text)}
+        onChangeText={setPhone}
         placeholder={'Phone number'}
         style={styles.input}
       />
 
       <TextInput
         value={town}
-        onChange={(event) => setTown(event.nativeEvent.text)}
+        onChangeText={setTown}
         placeholder={'Town name'}
         style={styles.input}
       />
@@ -58,4 +61,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default JoinClubComponenet;
+export default JoinClubComponent;
