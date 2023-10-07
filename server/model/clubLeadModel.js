@@ -37,5 +37,5 @@ const ClubLeadSchema = new Schema({
     }
 });
 
-const ClubLead = mongoose.model("clublead", ClubLeadSchema);
+const ClubLead = mongoose.model("clubleads", ClubLeadSchema);
 module.exports = ClubLead;

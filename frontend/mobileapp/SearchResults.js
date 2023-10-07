@@ -5,13 +5,15 @@ import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 const SearchResults = ({ route }) => {
 
-  const results = route.params.response
-  const name = route.params.name
-  const phoneNumber = route.params.phoneNumber
+  const results = route.params.response;
+  const name = route.params.name;
+  const phoneNumber = route.params.phoneNumber;
 
     const requestClub = async () => {
-      const resp = await axios.put(`/clublead/${results.response.lid}/requests`, [{"name": name, "phoneNumber": phoneNumber}]);
-      console.log(resp);
+      const resp = await axios.put(`http://localhost:3000/clubleads/requests/${results[0].lid}`, {
+        requests: [{"name": name, "phoneNumber": phoneNumber}]
+    });
+          console.log(resp);
     };
 
     return (
@@ -20,7 +22,7 @@ const SearchResults = ({ route }) => {
         <View style={styles.buttonStyle}>
           <Text style={styles.title}>
                   {item.title}
-                </Text>
+              </Text>
           <Button
             title = "Request to join"
             onPress={() => requestClub()}

@@ -20,8 +20,8 @@ const ClubSchema = new Schema({
         default:""
     }, 
     lid:{
-        type:Number,
-        default:0
+        type:String,
+        default:""
     }, 
     members:{
         type:Array,
