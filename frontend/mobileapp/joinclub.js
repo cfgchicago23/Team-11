@@ -48,6 +48,12 @@ const JoinClubComponent = ({ navigation }) => {
         onPress={() => navigation.navigate('Modules')}
         style={styles.button}
       />
+
+      <Button
+        title="Leader View"
+        onPress={() => navigation.navigate('LeaderPage')}
+        style={styles.button}
+      />
     </View>
   );
 }

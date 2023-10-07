@@ -6,6 +6,9 @@ import JoinClubComponenet from './joinclub';
 import ModuleScreen from './modules';
 import LessonScreen from './lesson';
 import PostPage from './form';
+import LeaderPage from './LeaderPage';
+import MakeClub from './MakeClub';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +20,8 @@ function App() {
         <Stack.Screen name="Modules" component={ModuleScreen} />
         <Stack.Screen name="Lesson" component={LessonScreen} />
         <Stack.Screen name="PostPage" component={PostPage} />
-
+        <Stack.Screen name="LeaderPage" component={LeaderPage} />
+        <Stack.Screen name="MakeClub" component={MakeClub} />
       </Stack.Navigator>
       
     </NavigationContainer>
@@ -26,3 +30,4 @@ function App() {
 }
 
 export default App;
+

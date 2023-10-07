@@ -24,7 +24,6 @@ Router.post("/club", async(req, res) => {
     });
 
     await club.save();
-    res.redirect("/club")
 });
 
 module.exports = Router
