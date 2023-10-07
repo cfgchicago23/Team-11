@@ -12,12 +12,11 @@ const JoinClubComponent = ({ navigation }) => {
     const res = await axios.get("http://localhost:3000/club", { params: params });
     console.log(res.data);
     // navigation.navigate
-};
-
+  };
 
   return (
     <View style={styles.container}>
-      <Text>Join a Club</Text>
+      <Text style={styles.title}>Looking to join a community?</Text>
       <TextInput
         value={name}
         onChangeText={setName}
@@ -30,6 +29,7 @@ const JoinClubComponent = ({ navigation }) => {
         onChangeText={setPhone}
         placeholder={'Phone number'}
         style={styles.input}
+        keyboardType="numeric"
       />
 
       <TextInput
@@ -42,11 +42,13 @@ const JoinClubComponent = ({ navigation }) => {
       <Button
         title={'Submit'}
         onPress={onSubmit}
+        style={styles.button}
       />
-
+      <hr></hr>
       <Button
         title="Go to Modules"
         onPress={() => navigation.navigate('Modules')}
+        style={styles.button}
       />
     </View>
   );
@@ -54,11 +56,26 @@ const JoinClubComponent = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    // Add your styles for the container here
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 16,
   },
   input: {
-    // Add your styles for the input fields here
-  }
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginBottom: 16,
+    padding: 10,
+    width: '100%',
+  },
+  button: {
+    marginTop: 10,
+  },
 });
 
 export default JoinClubComponent;
