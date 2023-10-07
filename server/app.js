@@ -36,20 +36,9 @@ const uri = "mongodb+srv://testuser:KFGLlFvJ01ojPswM@team11.8jevc3m.mongodb.net/
 // }
 // run().catch(console.dir);
 
-
 //-Mongoose
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
-// Define the user schema
-// const userSchema = new Schema({
-//   username: String
-// });
-
-// Define the post schema, referencing the user schema
-const postSchema = new Schema({
-  title: String
-});
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -62,11 +51,6 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
     res.send("Hello");
 })
-
-// app.get('/member', async (req, res) => {
-//   const member = await Member.find({});
-//   res.send(member);
-// })
 
 mongoose.connect(uri,{
   useNewUrlParser: true,
