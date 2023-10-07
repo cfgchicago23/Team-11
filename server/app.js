@@ -7,7 +7,7 @@ var bodyParser = require('body-parser')
 //-MongoDB
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://testuser:KFGLlFvJ01ojPswM@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://testuser:<password>@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 // const client = new MongoClient(uri, {
