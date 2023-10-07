@@ -19,11 +19,11 @@ Router.get("/member/:uid", async(req, res) => {
 Router.post("/members", async(req, res) => {
     let newMember = new Member({
         uid: req.body.uid,
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
+        firstname: encrypt(req.body.firstname),
+        lastname: encrypt(req.body.lastname),
         start: req.body.start,
         clubs: req.body.clubs,
-        email: req.body.email
+        email: encrypt(req.body.email)
     });
 
     await newMember.save();
