@@ -2,15 +2,24 @@ const express = require("express");
 const Router = express.Router();
 const Club = require("../model/clubModel");
 
+Router.get("/club", async(req, res) => {
+    res.send("Welcome to the club page");
+});
+
+Router.get("/club/:uid", async(req, res) => {
+    const uid = req.params.uid.toString();
+    const member = await ClubLead.find({"uid":uid});
+    res.send(member);
+});
+
 Router.post("/club", async(req, res) => {
     console.log(req.body)
     let club = new Club({
         uid: req.body.uid,
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        start: req.body.start,
-        clubs: req.body.clubs,
-        email: req.body.email
+        name: req.body.name,
+        location: req.body.location,
+        lid: req.body.lid,
+        members: req.body.members
     });
 
     await club.save();
