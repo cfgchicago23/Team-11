@@ -7,7 +7,7 @@ On a high level, we aimed to create a platform for the Global Family Care Networ
 Clone into your local repository and run ``npm install``. This should install the required dependencies to run our application.
 
 ### Environment Variables
-To correctly connect to our mongoDB instance, you must have a .env file with the secret variable ``MONGO_PWD``. 
+To correctly connect to our mongoDB instance, you must have a .env file with the secret variable ``MONGO_PWD``. Otherwise, you will receive an authentication error. 
 
 ## Technologies
 We utilized ``node.js`` , ``express`` ``react-native`` and ``mongodb`` to create this application. Additionally, to aid in the development process, we installed ``nodemon``, so that the server automatically updates upon file changes. Our database securely houses basic information on members, leaders, and clubs.
