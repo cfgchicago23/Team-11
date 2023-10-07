@@ -23,6 +23,8 @@ async function run() {
     await client.connect();
     // Send a ping to confirm a successful connection
     // await client.db("admin").command({ ping: 1 });
+
+    await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
     // Ensures that the client will close when you finish/error
@@ -49,6 +51,9 @@ const postSchema = new Schema({
 // Define the User and Post models
 const User = mongoose.model('User', userSchema);
 const Post = mongoose.model('Post', postSchema);
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
