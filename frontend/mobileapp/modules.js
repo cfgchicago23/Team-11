@@ -8,128 +8,50 @@ const ModuleScreen = () => {
       {
         "userId": 1,
         "id": 1,
-        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+        "title": "Understanding Human Trafficking: What It Is and Isn't",
+        "body": "In this lesson, we will define human trafficking and differentiate it from other related concepts, discuss the different forms of human trafficking, and provide real-life examples to illustrate the concept."
       },
       {
         "userId": 1,
         "id": 2,
-        "title": "qui est esse",
-        "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+        "title": "Identifying Red Flags: Signs of Potential Traffickers",
+        "body": "In this lesson, we will learn how to recognize common tactics used by traffickers to manipulate victims, discuss warning signs in online and offline interactions, and encourage critical thinking about new acquaintances and situations."
       },
       {
         "userId": 1,
         "id": 3,
-        "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-        "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+        "title": "Trusted Adults and Safe Spaces: Who to Turn to for Help",
+        "body": "In this lesson, we will learn how to identify trustworthy adults to confide in, explain the importance of having a safety network, and discuss safe places and organizations where we can seek assistance."
       },
       {
         "userId": 1,
         "id": 4,
-        "title": "eum et est occaecati",
-        "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+        "title": "Setting Boundaries: Learning to Say 'No' and Mean It",
+        "body": "In this lesson, we will learn how to establish personal boundaries in various situations and learn that everyone has the right to refuse any request that makes them feel unsafe. This lesson inclides assertiveness training to help students confidently say \"no\" when uncomfortable."
       },
       {
         "userId": 1,
         "id": 5,
-        "title": "nesciunt quas odio",
-        "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+        "title": "The Power of Peer Support: Helping Friends Stay Safe",
+        "body": "In this lesson, we will encourage students to look out for their friends' safety, discuss strategies for intervening if you suspect a friend is in a risky situation, and promote open communication among peers about safety concerns."
       },
       {
         "userId": 1,
         "id": 6,
-        "title": "dolorem eum magni eos aperiam quia",
-        "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+        "title": "Building Self-Esteem and Self-Confidence to Resist Manipulation",
+        "body": "Ib this lesson we will explain the link between self-esteem and vulnerability to manipulation, provide exercises and tips to boost self-confidence, and emphasize the importance of valuing oneself and one's worth."
       },
       {
         "userId": 1,
         "id": 7,
-        "title": "magnam facilis autem",
-        "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+        "title": "Online Safety: Protecting Yourself from Online Predators",
+        "body": "In this lesson, we will explore safe internet practices, including setting privacy settings and reporting suspicious online behavior, discuss the dangers of sharing personal information online and responsible online communication."
       },
       {
         "userId": 1,
         "id": 8,
-        "title": "dolorem dolore est ipsam",
-        "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
-      },
-      {
-        "userId": 1,
-        "id": 9,
-        "title": "nesciunt iure omnis dolorem tempora et accusantium",
-        "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
-      },
-      {
-        "userId": 1,
-        "id": 10,
-        "title": "optio molestias id quia eum",
-        "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
-      },
-      {
-        "userId": 2,
-        "id": 11,
-        "title": "et ea vero quia laudantium autem",
-        "body": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi"
-      },
-      {
-        "userId": 2,
-        "id": 12,
-        "title": "in quibusdam tempore odit est dolorem",
-        "body": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio"
-      },
-      {
-        "userId": 2,
-        "id": 13,
-        "title": "dolorum ut in voluptas mollitia et saepe quo animi",
-        "body": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam"
-      },
-      {
-        "userId": 2,
-        "id": 14,
-        "title": "voluptatem eligendi optio",
-        "body": "fuga et accusamus dolorum perferendis illo voluptas\nnon doloremque neque facere\nad qui dolorum molestiae beatae\nsed aut voluptas totam sit illum"
-      },
-      {
-        "userId": 2,
-        "id": 15,
-        "title": "eveniet quod temporibus",
-        "body": "reprehenderit quos placeat\nvelit minima officia dolores impedit repudiandae molestiae nam\nvoluptas recusandae quis delectus\nofficiis harum fugiat vitae"
-      },
-      {
-        "userId": 2,
-        "id": 16,
-        "title": "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio",
-        "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta"
-      },
-      {
-        "userId": 2,
-        "id": 17,
-        "title": "fugit voluptas sed molestias voluptatem provident",
-        "body": "eos voluptas et aut odit natus earum\naspernatur fuga molestiae ullam\ndeserunt ratione qui eos\nqui nihil ratione nemo velit ut aut id quo"
-      },
-      {
-        "userId": 2,
-        "id": 18,
-        "title": "voluptate et itaque vero tempora molestiae",
-        "body": "eveniet quo quis\nlaborum totam consequatur non dolor\nut et est repudiandae\nest voluptatem vel debitis et magnam"
-      },
-      {
-        "userId": 2,
-        "id": 19,
-        "title": "adipisci placeat illum aut reiciendis qui",
-        "body": "illum quis cupiditate provident sit magnam\nea sed aut omnis\nveniam maiores ullam consequatur atque\nadipisci quo iste expedita sit quos voluptas"
-      },
-      {
-        "userId": 2,
-        "id": 20,
-        "title": "doloribus ad provident suscipit at",
-        "body": "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo"
-      },
-      {
-        "userId": 3,
-        "id": 21,
-        "title": "asperiores ea ipsam voluptatibus modi minima quia sint",
-        "body": "repellat aliquid praesentium dolorem quo\nsed totam minus non itaque\nnihil labore molestiae sunt dolor eveniet hic recusandae veniam\ntempora et tenetur expedita sunt"
+        "title": "Safety Strategies: Practical Tips for Staying Safe in Different Situations",
+        "body": "In this lesson, we will discuss practical safety tips for various settings (e.g., at home, at school, in public spaces), discuss situational awareness and decision-making in potentially risky scenarios, and learn  how to seek help and support when we feel unsafe."
       }
   ];
 
