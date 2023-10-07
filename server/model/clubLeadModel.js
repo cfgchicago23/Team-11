@@ -31,6 +31,10 @@ const ClubLeadSchema = new Schema({
         type:String,
         default:""
     }, 
+    requests:{
+        type:Array,
+        default:[]
+    }
 });
 
 const ClubLead = mongoose.model("clublead", ClubLeadSchema);
