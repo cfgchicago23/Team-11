@@ -1,19 +1,14 @@
-const mongoose = require('mongoose')
+import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
-//Member Schema 
-const MemberSchema = new Schema({
-    uid:{
+//ClubRequest Schema 
+const ClubRequestSchema = new Schema({
+    id:{
         type:Number,
         maxlength:100,
         required:true,
         unique:true
     },
-    // password:{
-    //     type:String,
-    //     maxlength:100,
-    //     required:true
-    // },
     firstname:{
         type:String,
         maxlength:40,
@@ -24,13 +19,9 @@ const MemberSchema = new Schema({
         maxlength:40,
         default:""
     }, 
-    start:{
-        type:Date,
+    town:{
+        type:String,
         default:Date.now
-    }, 
-    clubs:{
-        type:Array,
-        default:""
     }, 
     email:{
         type:String,
@@ -38,5 +29,5 @@ const MemberSchema = new Schema({
     }, 
 });
 
-const Member = mongoose.model("member", MemberSchema);
-module.exports = Member;
+const ClubRequest = mongoose.model("clubrequest", ClubRequestSchema);
+module.exports = ClubRequest;

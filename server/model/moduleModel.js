@@ -1,33 +1,33 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-//Club Schema 
-const ClubSchema = new Schema({
-    uid:{
+//Module Schema 
+const ModuleSchema = new Schema({
+    id:{
         type:Number,
         maxlength:100,
         required:true,
         unique:true
     },
-    name:{
+    title:{
         type:String,
         maxlength:40,
         default:""
     },
-    location:{
+    type:{
         type:String,
         maxlength:40,
         default:""
     }, 
-    lid:{
+    cid:{
         type:Number,
         default:0
     }, 
-    members:{
+    lessons:{
         type:Array,
         default:""
-    }, 
+    },
 });
 
-const Club = mongoose.model("club", ClubSchema);
-module.exports = Club;
+const Module = mongoose.model("module", ModuleSchema);
+module.exports = Module;
