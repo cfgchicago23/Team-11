@@ -3,10 +3,13 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-//-MongoDB
+// load env
+require('dotenv').config();
 
+//-MongoDB
+let mongo_pwd = process.env.MONGO_PWD;
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://testuser:<password>@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://testuser:" + mongo_pwd + "@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -19,6 +22,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
+    console.log();
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
     // Send a ping to confirm a successful connection
