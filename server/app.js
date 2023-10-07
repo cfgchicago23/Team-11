@@ -10,7 +10,7 @@ var bodyParser = require('body-parser')
 require('dotenv').config();
 
 let mongo_pwd = process.env.MONGO_PWD;
-const uri = "mongodb+srv://testuser:" + mongo_pwd + "@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://testuser:KFGLlFvJ01ojPswM@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
 
 //-Mongoose
 const mongoose = require('mongoose');

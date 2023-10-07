@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/cfgchicago23/Team-11#readme",
   "dependencies": {
+    "@expo/webpack-config": "^19.0.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
@@ -31,7 +32,7 @@
     "mongoose": "^7.6.0",
     "nodemon": "^3.0.1",
     "react-dom": "18.2.0",
-    "react-native-web": "~0.19.6",
-    "@expo/webpack-config": "^19.0.0"
+    "react-native-deck-swiper": "^2.0.16",
+    "react-native-web": "~0.19.6"
   }
 }
