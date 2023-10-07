@@ -9,11 +9,6 @@ const MemberSchema = new Schema({
         required:true,
         unique:true
     },
-    // password:{
-    //     type:String,
-    //     maxlength:100,
-    //     required:true
-    // },
     firstname:{
         type:String,
         maxlength:40,
