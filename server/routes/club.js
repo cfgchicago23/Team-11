@@ -17,7 +17,7 @@ Router.post("/club", async(req, res) => {
     console.log(req.body)
     let club = new Club({
         uid: req.body.uid,
-        name: req.body.name,
+        name: encrypt(req.body.name),
         location: req.body.location,
         lid: req.body.lid,
         members: req.body.members
