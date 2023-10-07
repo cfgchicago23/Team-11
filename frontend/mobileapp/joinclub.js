@@ -8,8 +8,7 @@ const JoinClubComponent = ({ navigation }) => {
   const [town, setTown] = useState("");
 
   const onSubmit = async () => {
-    const params = { location: town };
-    const res = await axios.get("http://localhost:3000/club", { params: params });
+    const res = await axios.get(`http://localhost:3000/club/${town}`);
     console.log(res.data);
     navigation.navigate('SearchResults', {"response": res.data, "name": name, "phoneNumber": phoneNumber});
 };
@@ -44,7 +43,6 @@ const JoinClubComponent = ({ navigation }) => {
         onPress={onSubmit}
         style={styles.button}
       />
-      <hr></hr>
       <Button
         title="Go to Modules"
         onPress={() => navigation.navigate('Modules')}

@@ -27,23 +27,23 @@ Router.post("/clublead", async(req, res) => {
     res.redirect("/clublead")
 });
 
-Router.put('/clublead/:uid/requests', async (req, res) => {
-    try {
-        const { uid } = req.params;
-        const { requests } = req.body;
+// Router.put('/clublead/:uid/requests', async (req, res) => {
+//     try {
+//         const { uid } = req.params;
+//         const { requests } = req.body;
 
-        const clubLead = await ClubLead.findOne({ uid: uid });
-        if (!clubLead) {
-            return res.status(404).json({ message: 'Club Lead not found' });
-        }
+//         const clubLead = await ClubLead.findOne({ uid: uid });
+//         if (!clubLead) {
+//             return res.status(404).json({ message: 'Club Lead not found' });
+//         }
 
-        clubLead.requests = requests;
-        await clubLead.save();
+//         clubLead.requests = requests;
+//         await clubLead.save();
 
-        res.json({ message: 'Requests updated successfully', clubLead });
-    } catch (error) {
-        res.status(500).json({ message: 'Server error', error });
-    }
-});
+//         res.json({ message: 'Requests updated successfully', clubLead });
+//     } catch (error) {
+//         res.status(500).json({ message: 'Server error', error });
+//     }
+// });
 
 module.exports = Router

@@ -2,13 +2,14 @@ const express = require("express");
 const Router = express.Router();
 const Club = require("../model/clubModel");
 
-Router.get("/club", async(req, res) => {
-    res.send("Welcome to the club page");
-});
+// Router.get("/club", async(req, res) => {
+//     res.send("Welcome to the club page");
+// });
 
-Router.get("/club/:uid", async(req, res) => {
-    const uid = req.params.uid.toString();
-    const member = await ClubLead.find({"uid":uid});
+Router.get("/club/:location", async(req, res) => {
+    const location = req.params.location.toString();
+    console.log(location);
+    const member = await Club.find({"location":location});
     res.send(member);
 });
 

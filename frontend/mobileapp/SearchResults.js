@@ -5,7 +5,9 @@ import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 const SearchResults = ({ route }) => {
 
-  const { results, name , phoneNumber} = route.params;
+  const results = route.params.response
+  const name = route.params.name
+  const phoneNumber = route.params.phoneNumber
 
     const requestClub = async () => {
       const resp = await axios.put(`/clublead/${results.response.lid}/requests`, [{"name": name, "phoneNumber": phoneNumber}]);
@@ -14,7 +16,7 @@ const SearchResults = ({ route }) => {
 
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        {resuls.map((item, index) => (
+        {results.map((item, index) => (
         <View style={styles.buttonStyle}>
           <Text style={styles.title}>
                   {item.title}
