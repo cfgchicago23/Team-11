@@ -8,12 +8,12 @@ const JoinClubComponent = ({ navigation }) => {
   const [town, setTown] = useState("");
 
   const onSubmit = async () => {
-    const params = { location: 'jk' };
+    const params = { location: town };
     const res = await axios.get("http://localhost:3000/club", { params: params });
     console.log(res.data);
-    // navigation.navigate
-  };
-
+    navigation.navigate('SearchResults', {"response": res.data, "name": name, "phoneNumber": phoneNumber});
+};
+  
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Looking to join a community?</Text>
