@@ -1,40 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
-import {
-  Button,
-  SafeAreaView,
+import * as React from 'react';
+import { Button, View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import JoinClubComponenet from './joinclub';
+import ModuleScreen from './modules';
 
-  Alert,
-} from 'react-native';
+const Stack = createNativeStackNavigator();
 
-
-async function fetchData() {
-  try {
-    const response = await fetch('http://localhost:3000/test');
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-export default function App() {
+function App() {
   return (
-    <Button
-        title="Press me"
-        onPress={fetchData()}
-      />
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={JoinClubComponenet} />
+        <Stack.Screen name="Modules" component={ModuleScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
