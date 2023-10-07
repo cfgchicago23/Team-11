@@ -6,7 +6,7 @@ const port = 3000
 //-MongoDB
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://katkoor4:PWGw7wOqeyRwJ5gH@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://testuser:<password>@team11.8jevc3m.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -22,6 +22,8 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
     // Send a ping to confirm a successful connection
+    // await client.db("admin").command({ ping: 1 });
+
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
@@ -49,12 +51,14 @@ const postSchema = new Schema({
 // Define the User and Post models
 const User = mongoose.model('User', userSchema);
 const Post = mongoose.model('Post', postSchema);
-
-
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+    console.log(`Server is running on port: ${port}`);
+  });
+
+app.get("/", (req, res) => {
+    res.send("Hello");
 })
