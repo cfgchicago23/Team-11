@@ -1,4 +1,4 @@
-const Lesson = [
+const lessons = [
     {
       "userId": 1,
       "id": 1,
@@ -126,3 +126,5 @@ const Lesson = [
       "body": "repellat aliquid praesentium dolorem quo\nsed totam minus non itaque\nnihil labore molestiae sunt dolor eveniet hic recusandae veniam\ntempora et tenetur expedita sunt"
     }
   ]
+
+  export default lessons

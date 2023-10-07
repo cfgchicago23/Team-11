@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
   },
 
   buttonStyle: {
-    width: 200, // Set your desired width here
+    width: 400, // Set your desired width here
     marginBottom: 10, // Optional: Add a margin at the bottom for spacing between buttons
   },
 });
